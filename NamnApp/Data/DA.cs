@@ -11,25 +11,17 @@ namespace Data
     {
         string filePath = @"C:\Demo\Test.txt";
 
-        List<UserRepository> userList = new List<UserRepository>();
-
         List<String> output = new List<string>();
 
-        public void AddUser(UserRepository user)
+        // Tanken här är att skapa kommaseparerad output som ska skrivas till en textfil
+        public void UserOutput(List<UserRepository> uList)
         {
-            userList.Add(user);
-        }
-
-        // test ----------------------- Hur få detta att fungera? Var anropa ifrån?
-        public void PrintUserlist()
-        {
-            foreach (var user in userList)
+            foreach (UserRepository u in uList)
             {
-                Console.WriteLine(user.FirstName);
-                Console.WriteLine(user.LastName);
+                string UserComma = $"{u.FirstName},{u.LastName}";
+                output.Add(UserComma);
+                //Console.WriteLine($"UserOutput Metod: {UserComma}"); //Test
             }
         }
-
-
     }
 }

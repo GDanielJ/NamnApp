@@ -18,14 +18,11 @@ namespace NamnApp
 
 
             UserRepository user = new UserRepository(first, last);
-            //userList.Add(user);
 
-            // Test
-            //foreach (var u in userList)
-            //{
-            //    Console.WriteLine($"Firstname: {u.FirstName}");
-            //    Console.WriteLine($"Lastname: {u.LastName}");
-            //}
+            Users usersobj = new Users();
+
+            usersobj.AddUser(user);
+
 
         }
     }

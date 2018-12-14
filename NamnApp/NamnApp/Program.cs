@@ -23,7 +23,6 @@ namespace NamnApp
 
             usersobj.AddUser(user);
 
-
         }
     }
 }

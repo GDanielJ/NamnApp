@@ -7,7 +7,7 @@ using Data;
 
 namespace NamnApp
 {
-    class Program
+    class Program //OBS!!!!!!!! Detta är fel branch!!!!!!!!!!!!!!!! Se den som heter Test1!
     {
         static void Main(string[] args)
         {
